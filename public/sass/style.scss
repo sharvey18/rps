@@ -1,0 +1,63 @@
+@import 'partials/variables';
+
+body {
+  background: linear-gradient($queenBlue, $coolBlack);
+  font-family: monospace;
+  text-align: center;
+  height: 100%;
+  // position: relative;
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  position: relative;
+  top: 5%;
+  font-family: $righteous;
+  color: $white;
+  letter-spacing: .5rem;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 530px) {
+  .title {
+    font-size: 1rem;
+  }
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 400px;
+  border: 1px solid $white;
+  border-radius: 3rem;
+  padding: calc(10% - 115px);
+  h1 {
+    font-family: $righteous;
+    color: $white;
+    letter-spacing: .5rem;
+  }
+  img {
+    padding: 10px;
+    width: 5rem;
+    height: auto;
+    &:hover {
+      transition: scale(1.4);
+      transition: all 1s;
+    }
+  }
+  p {
+    font-family: $boogaloo;
+    color: $white;
+    letter-spacing: .05rem;
+    font-size: 1.2rem;
+  }
+}
